@@ -1,0 +1,8 @@
+steps:
+  - name: deploy
+    image: /bin/bash
+    commands:
+      - cd outline && fly deploy --remote-only
+    when:
+      - branch: main
+        event: push

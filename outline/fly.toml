@@ -1,0 +1,26 @@
+# fly.toml app configuration file generated for kestrel on 2024-06-29T03:19:03+07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'kestrel'
+primary_region = 'waw'
+
+[build]
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = "512mb"
+  swap_size_mb = 1024
+
+[env]
+  URL = "https://tracker.applycreatures.com"
+  PORT = "3000"
