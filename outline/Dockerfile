@@ -29,7 +29,7 @@ COPY main.cf /etc/postfix/main.cf
 
 
 # Set mail environment variables
-ENV SMTP_HOST=tracker.applycreatures.com
+ENV SMTP_HOST=localhost
 ENV SMTP_PORT=25
 ENV SMTP_USERNAME=
 ENV SMTP_PASSWORD=
