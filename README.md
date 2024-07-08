@@ -193,7 +193,7 @@ After deployment, you can access via a web browser
 - [x] Setup Dockkerfiles
 - [x] Test features
 - [ ] Set up email
-- [ ] CI pipeline
+- [x] CI pipeline
 
 <hr/>
 
